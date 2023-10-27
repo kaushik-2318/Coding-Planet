@@ -14,20 +14,20 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
+	background-color: #F5F5F5;
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 3px;
+	background-color: #F5F5F5;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #313e47;
-  background: linear-gradient(180deg, #313e47, #2a3473 50%, #2232ff);
   border-radius: 10px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122,153,217)), color-stop(0.72, rgb(73,125,189)),color-stop(0.86, rgb(28,58,148)));
+
 }
 
-::-webkit-scrollbar-track-piece {
-  background: rgb(4,5,61);
-  background: linear-gradient(90deg, rgba(4,5,61,1) 0%, rgba(4,5,61,1) 100%);
-}
+
+

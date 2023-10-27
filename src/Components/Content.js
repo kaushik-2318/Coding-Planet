@@ -4,10 +4,13 @@ import Contentcard from "./Contentcard";
 import form from "../Assest/Images/blackFox.jpg";
 import button from "../Assest/Images/Buttons.jpg"
 import muchmore from "../Assest/Images/MuchMore.jpg"
+import Carousel from './Carousel';
+
 
 function Content() {
   return (
     <>
+    <Carousel/>
       <div className="content">
         <Contentcard title="Forms" body="Here you will find different type of awesome LOGIN and SIGNUP form that help you to make your webpage more dynamic and awesome." lang="They are made by using HTML CSS JAVASCRIPT and REACT." before="right" img={form} flexdirection="row" width="139px" height="410px" tranform="translateX(-68px) rotate(340deg)" borderradius="0px 40px 40px 0px" links="form"/>
 
