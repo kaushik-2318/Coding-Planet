@@ -1,0 +1,43 @@
+.background{
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.7)),url("../../Assest/Images/hexagonalpattern.jpg");
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+    
+    background-position: 50%;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.background_text{
+    -webkit-animation: text 1s ease-out 0.7s 1;
+    animation: text 1s ease-out 0.7s 1;
+    color: #fff;
+    font-family: Helvetica Neue;
+    font-size: 8vh;
+    margin-left: 15%;
+    padding: auto;
+    width: 80vh;
+}
+@media (max-width: 800px) {
+    .background div {
+      font-size: 6vh;
+      width: 60vh;
+    }
+  }
+  @media (max-width: 520px) {
+    .background div {
+      font-size: 5vh;
+      margin-left: 5%;
+      width: 50vh;
+    }
+  }
+  @media (max-width: 370px) {
+    .background_text{
+      padding-left: 5%;
+    }
+  }

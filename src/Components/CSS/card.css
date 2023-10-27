@@ -1,0 +1,116 @@
+.card_conatiner {
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 3px hsl(0, 0%, 0%);
+    display: flex;
+    height: 24vh;
+    height: 240px;
+    margin-top: 10px;
+    width: 360px;
+    perspective: 800px;
+    justify-content: center;
+    transition: .2s;
+}
+
+.card {
+    height: 220px;
+    width: 340px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+}
+
+.card_conatiner:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card_conatiner:hover {
+    scale: 1.1;
+    height: 260px;
+}
+
+.front_card {
+    position: absolute;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front_card img {
+    width: 340px;
+    height: 220px;
+    border-radius: 20px;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.card_text1 {
+    font-family: Arvo, serif;    
+    text-align: center;
+    transform-style: preserve-3d;
+    transform:rotateX(-180deg);
+    transform-origin: top;
+    z-index: -1;
+    position: absolute;
+    transition: 1s;
+    top: 210px;
+}
+
+.card_conatiner:hover .card_text1 {
+    transform: rotateX(0deg);
+    top: 230px;
+}
+
+.back_card {
+    position: absolute;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.back_card_image {
+    border-radius: 20px;
+    position: absolute;
+    width: 340px;
+    height: 220px;
+    padding-top: 10px;
+}
+
+.card_text2 {
+    font-family: Arvo, serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 15px;
+}
+.card_conatiner:hover .card_text1{
+    color: #007bff;
+}
+.card_text2:hover{
+    color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+}
+.card_text2 svg{
+    width: 15px;
+    fill: #fff;
+}
+.card_text2:hover svg{
+    fill: #007bff;
+    width: 15px;
+}
