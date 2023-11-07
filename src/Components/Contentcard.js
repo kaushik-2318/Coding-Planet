@@ -17,7 +17,7 @@ function Contentcard(props) {
  
   return (
     <>
-      <div className="c" style={{ flexDirection: width.innerWidth<900 ? "column-reverse" : props.flexdirection }}>
+      <div className="c" style={{ flexDirection: width.innerWidth<901 ? "column-reverse" : props.flexdirection }}>
         <div className="text">
           <p>{props.title}</p>
           <p>
@@ -30,7 +30,7 @@ function Contentcard(props) {
           </p>
         </div>
         <div className={props.before}>
-          <img src={props.img} style={{ borderRadius: width.innerWidth<900 ? "40px 40px 0px 0px" : props.borderradius }} alt="" />
+          <img src={props.img} style={{ borderRadius: width.innerWidth<901 ? "40px 40px 0px 0px" : props.borderradius }} alt="" />
         </div>
       </div>
     </>
