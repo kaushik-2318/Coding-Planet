@@ -1,6 +1,6 @@
 .c {
     background-color: #fff;
-    border-radius: 40px;
+    border-radius: 4vh;
     box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.7);
     display: flex;
     height: 50vh;
@@ -35,12 +35,13 @@
     font-family: Exo, sans-serif;
     padding-bottom: 50px;
     width: 80%;
+    font-size: 2.5vh;
 }
 
 .text p:nth-child(3) button {
     background-color: #fff;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 1vh;
     cursor: pointer;
     font-size: 2vh;
     margin-top: 2vh;
@@ -48,14 +49,16 @@
 }
 
 
-.right, .left {
+.right,
+.left {
     position: relative;
     width: 100%;
     flex-basis: 50%;
     overflow: hidden;
 }
 
-.right img, .left img {
+.right img,
+.left img {
     background-repeat: no-repeat;
     height: 50vh;
     width: 100%;
@@ -68,48 +71,60 @@
     background: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, rgba(0, 0, 0, 0.7));
     content: "";
-    position: absolute;    
-    width: 139px;
-    height: 410px;
-    transform: translateX(-68px) rotate(340deg);
+    position: absolute;
+    width: 18.7vh;
+    height: 55vh;
+    transform: translateX(-9.1vh) rotate(340deg);
 }
-.left::before{
+
+.left::before {
     background: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, rgba(0, 0, 0, 0.7));
     content: "";
     position: absolute;
-    width: 149px;
-    height: 410px;
-    transform: translateX(615px) rotate(20deg);   
+    width: 19vh;
+    height: 57vh;
+    transform: translateX(84.5vh) rotate(20deg);
 }
 
 @media (max-width: 900px) {
     .c {
         height: 80vh;
     }
+
     .text p:first-child {
         font-size: 5vh;
     }
+
     .text p:nth-child(2) {
         font-size: 2vh;
     }
+
     .text p:nth-child(3) {
         font-size: 2vh;
     }
-    .text{
+
+    .text {
         height: 10vh;
     }
-    .right::before, .left::before {
+
+    .right::before,
+    .left::before {
         display: none;
     }
-    .right img, .left img {
-        /* background-position: 50%; */
+
+    .right img,
+    .left img {
         background-size: cover;
     }
-    .right, .left {
+
+    .right,
+    .left {
         overflow: visible;
     }
-    .right img, .left img {
+
+    .right img,
+    .left img {
         height: 40vh;
     }
 }

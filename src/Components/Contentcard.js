@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './CSS/contentcard.css'
 import { Link } from 'react-router-dom'
 
 function Contentcard(props) {
   const [width, setwidth] = useState(getinnerwidth());
-  useEffect(()=>{
+  useEffect(() => {
     function handleWindowResize() {
       setwidth(getinnerwidth());
     }
@@ -14,10 +14,10 @@ function Contentcard(props) {
     };
   })
 
- 
+
   return (
     <>
-      <div className="c" style={{ flexDirection: width.innerWidth<901 ? "column-reverse" : props.flexdirection }}>
+      <div className="c" style={{ flexDirection: width.innerWidth < 901 ? "column-reverse" : props.flexdirection }}>
         <div className="text">
           <p>{props.title}</p>
           <p>
@@ -30,7 +30,7 @@ function Contentcard(props) {
           </p>
         </div>
         <div className={props.before}>
-          <img src={props.img} style={{ borderRadius: width.innerWidth<901 ? "40px 40px 0px 0px" : props.borderradius }} alt="" />
+          <img src={props.img} style={{ borderRadius: width.innerWidth < 901 ? "4vh 4vh 0px 0px" : props.borderradius }} alt="" />
         </div>
       </div>
     </>
@@ -38,8 +38,8 @@ function Contentcard(props) {
 }
 
 const getinnerwidth = () => {
-  const {innerWidth} = window;
-return {innerWidth};
+  const { innerWidth } = window;
+  return { innerWidth };
 }
 
 export default Contentcard;

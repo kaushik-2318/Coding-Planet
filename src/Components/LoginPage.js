@@ -1,18 +1,18 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import './CSS/login.css'
 
 function LoginPage() {
-    const [signup, setsignup] = useState('');
+    const [signup, setsignup] = useState(null);
     const login = () => {
         setsignup(true);
     }
-    const sign = () =>{
+    const sign = () => {
         setsignup(false);
     }
-    
+
     return (
         <div className='main_background'>
-            <div className={signup ? "wrapper animate-signIn" : "wrapper animate-signUp" }>
+            <div className={signup ? "wrapper animate-signIn" : "wrapper animate-signUp"}>
                 <div className="form-wrapper sign-up">
                     <form action="">
                         <h2>Sign Up</h2>

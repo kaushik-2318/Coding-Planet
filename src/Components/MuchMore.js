@@ -14,7 +14,7 @@ function Form() {
                 <div className='content_section'>
                     <div className='content_section_text'>Select the one you like the most</div>
                     <div className='content_section_card'>
-                        <Card/>
+                        <Card />
                     </div>
                 </div>
 

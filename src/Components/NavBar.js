@@ -37,7 +37,7 @@ function NavBar() {
         </div>
         <div className="search">
           <input className="search_bar" onChange={quicksearch} placeholder="Quick Search" value={searchbar} type="search" />
-          <img className="search_icon" src={search} alt="Search"/>
+          <img className="search_icon" src={search} alt="Search" />
         </div>
         <div>
           <ul className="link">
@@ -56,7 +56,7 @@ function NavBar() {
 
 
 
-      
+
       <div className="main_box">
         <div
           className="sidebar_menu"
@@ -74,7 +74,7 @@ function NavBar() {
             </li>
 
             <li>
-              <img src={bookmark} alt="Bookmark"/>
+              <img src={bookmark} alt="Bookmark" />
               <a href="/">Bookmark</a>
             </li>
           </ul>

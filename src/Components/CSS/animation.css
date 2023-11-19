@@ -1,7 +1,8 @@
-section{
-    margin: 0;
-    padding: 0;
-    position: fixed;
+.star {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
 }
 
 #stars {
@@ -564,6 +565,7 @@ section{
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(-2000px);
   }

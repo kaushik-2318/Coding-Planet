@@ -1,12 +1,8 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
-
 import './CSS/carousel.css'
-// import required modules
-import {Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 
 import img1 from '../Assest/ScreenShots/1.jpg'
@@ -27,7 +23,7 @@ function Carousel() {
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{
-          rotate: 0,
+          rotate: 1,
           stretch: 0,
           depth: 100,
           modifier: 4,
@@ -36,7 +32,7 @@ function Carousel() {
         autoplay={{
           delay: 500,
         }}
-        loop = {true}
+        loop={true}
         pagination={true}
         modules={[Autoplay, EffectCoverflow, Pagination]}
       >

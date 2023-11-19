@@ -2,7 +2,6 @@ nav {
   background-color: #121212d5;
   box-shadow: 0 3px 10px;
   grid-template-columns: 5rem 1fr 1.2fr 1fr 5rem;
-  height: 4.68rem;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -17,42 +16,48 @@ nav {
   align-items: center;
   grid-column: 2/3;
   justify-content: start;
-  width: 260px;
+  width: 37.5vh;
 }
 
 .title a {
   font-family: Exo, sans-serif;
-  font-size: 200%;
+  font-size: 4.6vh;
 }
 
 .logo {
-  height: 40px;
-  margin-left: 8px;
+  height: 4.9vh;
+  width: 4.9vh;
+  margin-left: 1vh;
   position: relative;
-  top: 8px;
+  top: 1vh;
   transition: 1s;
-  width: 40px;
 }
 
 .title:hover .logo {
   transform: rotate(2turn);
 }
+
 nav div:nth-child(3) {
   display: grid;
   grid-column: 3/4;
   place-content: center;
 }
-.search_bar{
-  border-radius: 10px;
-  width: 30vh;
+
+.search_bar {
+  width: 33vh;
   background-color: rgba(214, 205, 205, 0.129);
   border: 1px solid white;
   color: white;
-  padding-left: 10px;
+  padding-left: 1vh;
+  height: 4vh;
+  border-radius: 10px;
+  font-size: 2vh;
 }
-.search_icon{
+
+.search_icon {
   display: none;
 }
+
 nav div:nth-child(4) {
   display: grid;
   grid-column: 4/5;
@@ -68,7 +73,6 @@ nav div:nth-child(4) {
 
 .link li a {
   font-family: Arvo, serif;
-  font-size: 1rem;
 }
 
 .link:hover li {
@@ -113,19 +117,19 @@ nav div:nth-child(4) {
 .link1:hover:after,
 .link1:hover:before {
   transition: 0.3s;
-  width: 110px;
+  width: 17.5vh;
 }
 
 .link2:hover:after,
 .link2:hover:before {
   transition: 0.3s;
-  width: 50px;
+  width: 7.4vh;
 }
 
 .link3:hover:after,
 .link3:hover:before {
   transition: 0.3s;
-  width: 82px;
+  width: 12.6vh;
 }
 
 @media (max-width: 1024px) {
@@ -150,10 +154,12 @@ nav div:nth-child(4) {
     width: 100%;
   }
 
-  nav div:nth-child(4), .search_bar {
+  nav div:nth-child(4),
+  .search_bar {
     display: none;
   }
-  .search_icon{
+
+  .search_icon {
     display: block;
     cursor: pointer;
   }
@@ -234,9 +240,7 @@ nav div:nth-child(4) {
 }
 
 .main_box .sidebar_menu {
-  /* background: hsla(0, 0%, 100%, 0.1); */
   background-color: hsla(0, 0%, 7%, 0.835);
-  /* box-shadow: 0 0 15px hsla(0, 0%, 100%, 0.5); */
   height: 100vh;
   position: fixed;
   left: -280px;

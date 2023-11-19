@@ -4,11 +4,11 @@ import "../Components/CSS/animation.css"
 function Animation() {
   return (
     <>
-      <section>
+      <div className="star">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-      </section>
+      </div>
     </>
   );
 }

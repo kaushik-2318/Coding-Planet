@@ -6,10 +6,10 @@ import Footer from './Footer';
 function HomePage() {
   return (
     <>
-    <Animation/>
-    <Background/>
-    <Content/>
-    <Footer/>
+      <Animation />
+      <Background />
+      <Content />
+      <Footer />
     </>
   )
 }
