@@ -5,9 +5,7 @@ import menubar from "../Assest/Icons/menu-fill.png";
 import closebutton from "../Assest/Icons/close-fill.png";
 import login from "../Assest/Icons/login-box-fill.png";
 import bookmark from "../Assest/Icons/bookmark-fill.png";
-import search from "../Assest/Icons/search.svg"
-
-
+import search from "../Assest/Icons/search.svg";
 import home from "../Assest/Icons/home-2-fill.svg";
 
 function NavBar() {

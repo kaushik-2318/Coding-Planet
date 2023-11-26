@@ -18,6 +18,11 @@
     width: 50vh;
     height: 60vh;
 }
+@media (max-width: 430px) {
+    .wrapper{
+        scale: .8;
+    }
+}
 
 .form-wrapper {
     position: absolute;
