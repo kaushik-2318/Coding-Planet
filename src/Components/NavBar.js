@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./CSS/navbar.css";
 import logo from "../Assest/Logo.png";
 import menubar from "../Assest/Icons/menu-fill.png";
@@ -13,6 +13,21 @@ function NavBar() {
   const toggle = () => {
     setsidepanel(!sidepanel);
   };
+
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setsidepanel(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return() =>{
+      document.removeEventListener("mousedown", handler);
+    }
+  })
+
   const [searchbar, setsearchbar] = useState('')
   const quicksearch = (e) => {
     setsearchbar(e.target.value)
@@ -56,10 +71,7 @@ function NavBar() {
 
 
       <div className="main_box">
-        <div
-          className="sidebar_menu"
-          style={{ left: sidepanel ? "0px" : "-280px" }}
-        >
+        <div className="sidebar_menu" style={{ left: sidepanel ? "0px" : "-280px" }} ref={menuRef}>
           <ul className="menu">
             <li>
               <img src={login} alt="Login" />
