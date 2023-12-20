@@ -65,6 +65,7 @@
     background-size: cover;
     background-position: center;
     background-position: 100%;
+    object-fit: cover;
 }
 
 .right::before {
@@ -84,7 +85,7 @@
     position: absolute;
     width: 19vh;
     height: 57vh;
-    transform: translateX(84.5vh) rotate(20deg);
+    transform: translateX(89vh) rotate(20deg);
 }
 
 @media (max-width: 900px) {

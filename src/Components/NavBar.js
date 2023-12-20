@@ -23,7 +23,7 @@ function NavBar() {
       }
     };
     document.addEventListener("mousedown", handler);
-    return() =>{
+    return () => {
       document.removeEventListener("mousedown", handler);
     }
   })
@@ -73,20 +73,27 @@ function NavBar() {
       <div className="main_box">
         <div className="sidebar_menu" style={{ left: sidepanel ? "0px" : "-280px" }} ref={menuRef}>
           <ul className="menu">
-            <li>
-              <img src={login} alt="Login" />
-              <a href="/Login">Login/Sign-Up</a>
-            </li>
 
-            <li>
-              <img src={home} alt="Home" />
-              <a href="/">Home</a>
-            </li>
+            <a href="/Login">
+              <li>
+                <img src={login} alt="Login" />
+                Login/Sign-Up
+              </li>
+            </a>
 
-            <li>
-              <img src={bookmark} alt="Bookmark" />
-              <a href="/">Bookmark</a>
-            </li>
+            <a href="/">
+              <li>
+                <img src={home} alt="Home" />
+                Home
+              </li>
+            </a>
+
+            <a href="/">
+              <li>
+                <img src={bookmark} alt="Bookmark" />
+                Bookmark
+              </li>
+            </a>
           </ul>
         </div>
       </div>
